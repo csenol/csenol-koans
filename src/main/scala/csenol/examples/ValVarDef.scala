@@ -32,7 +32,7 @@ object ValVarDef extends App {
   println(d)
 
 
-  //nested scope ile tail-recusion optimization
+  //nested scope ile tail-call optimization
   def factorial(a:Int) = {
     import scala.annotation.tailrec    
     @tailrec
@@ -41,11 +41,13 @@ object ValVarDef extends App {
     factorialTail(a,1)
   }
   
+  // valx=4 factorial(x) yazmak yerine bunu factorial i calistirirken yapabiliriz
   val res = factorial {
     val x = 4
     println(x)
     x
   }
   println(res)
-
+  //yerli yerinde kullaniriz herseyi. x baska bi scope da lazim değil nasil olsa.
+  // function i call ettitkten sonra x heap'de stack da tutmaya gerek yok. 
 }
