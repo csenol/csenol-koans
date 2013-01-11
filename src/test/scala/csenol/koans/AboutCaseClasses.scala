@@ -1,4 +1,4 @@
-package org.functionalkoans.forscala
+package csenol.koans
 
 import support.KoanSuite
 
