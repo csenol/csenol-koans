@@ -1,3 +1,5 @@
+package csenol.examples
+
 object Patterns extends App {
 
   abstract class Expr

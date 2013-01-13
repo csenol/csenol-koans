@@ -2,6 +2,10 @@ package csenol.examples
 
 object ValVarDef extends App {
 
+  //her sey expression
+  // blocklar expression ve deger uretiyorlar.
+  //urettikleri degerler de en son da yazan expressionlar
+  // val x = 3 gibi bir seyle bitiyorsa Unit uretiyor
   val a:Int = {
     println("hello val")
     1
